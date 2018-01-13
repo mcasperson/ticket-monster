@@ -1,51 +1,51 @@
 -- MediaItem 0
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image1')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image1')
 -- MediaItem 1
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image2')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image2')
 -- MediaItem 2
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image3')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image3')
 -- MediaItem 3
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image4')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image4')
 -- MediaItem 4
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image5')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image5')
 -- MediaItem 5
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image6')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image6')
 -- MediaItem 6
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image7')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image7')
 -- MediaItem 7
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image8')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image8')
 -- MediaItem 8
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image9')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image9')
 -- MediaItem 9
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image10')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image10')
 -- MediaItem 10
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image11')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image11')
 -- MediaItem 11
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image12')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image12')
 -- MediaItem 12
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image13')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image13')
 -- MediaItem 13
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image14')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image14')
 -- MediaItem 14
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image15')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image15')
 -- MediaItem 15
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image16')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image16')
 -- MediaItem 16
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image17')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image17')
 -- MediaItem 17
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image18')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image18')
 -- MediaItem 18
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image19')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image19')
 -- MediaItem 19
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image20')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image20')
 -- MediaItem 20
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image21')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image21')
 -- MediaItem 21
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image22')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image22')
 -- MediaItem 22
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image23')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image23')
 -- MediaItem 23
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image24')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image24')
 
 -- Venue 1
 insert into Venue ( name, city, country, street, description, mediaitem_id, capacity) values ( 'Roy Thomson Hall', 'Toronto', 'Canada', '60 Simcoe Street','Roy Thomson Hall is the home of the Toronto Symphony Orchestra and the Toronto Mendelssohn Choir.',4, 11000);

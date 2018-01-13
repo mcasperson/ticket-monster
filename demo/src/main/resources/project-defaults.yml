@@ -1,0 +1,7 @@
+swarm:
+    jdbc-drivers:
+      myh2:
+        driver-class-name: org.h2.Driver
+        xa-datasource-name: org.h2.jdbcx.JdbcDataSource
+        driver-module-name: com.h2database.h2
+

@@ -32,3 +32,4 @@ _site
 _tmp
 classes
 .forge_settings
+*.jar

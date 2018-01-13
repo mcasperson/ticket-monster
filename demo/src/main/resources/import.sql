@@ -1,51 +1,51 @@
 -- MediaItem 0
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/65660684/640px-Weir%2C_Bob_(2007)_2.jpg')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 1
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/65660684/640px-Carnival_Puppets.jpg')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 2
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/65660684/640px-Opera_House_with_Sydney.jpg')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 3
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/65660684/640px-Roy_Thomson_Hall_Toronto.jpg')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 4
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/65660684/640px-West-stand-bmo-field.jpg')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 5
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/65660684/640px-Brazil_national_football_team_training_at_Dobsonville_Stadium_2010-06-03_13.jpg')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 6
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/8625587/ticketmonster/AllStateFootballChampionship.png')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 7
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/8625587/ticketmonster/ARhythmia.png')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 8
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/8625587/ticketmonster/BattleoftheBrassBands.png')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 9
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/8625587/ticketmonster/CarnivalComestoTown.png')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 10
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/8625587/ticketmonster/ChrisLewisQuarterfinals.png')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 11
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/8625587/ticketmonster/CrewYou.png')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 12
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/8625587/ticketmonster/ExtremeSnowboardingFinals.png')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 13
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/8625587/ticketmonster/FlamencoFinale.png')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 14
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/8625587/ticketmonster/JesseLewisUnplugged.png')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 15
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/8625587/ticketmonster/MadameButterfly.png')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 16
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/8625587/ticketmonster/MimeMania.png')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 17
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/8625587/ticketmonster/MorrisonCover.png')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 18
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/8625587/ticketmonster/TutuTchai.png')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 19
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/8625587/ticketmonster/SlapShot.png')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 20
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/8625587/ticketmonster/Giantsofthegame.png')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 21
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://dl.dropbox.com/u/8625587/ticketmonster/Punch%26Judy.png')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 22
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Paris_Opera_full_frontal_architecture%2C_May_2009.jpg/800px-Paris_Opera_full_frontal_architecture%2C_May_2009.jpg')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 -- MediaItem 23
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Boston_Symphony_Hall_from_the_south.jpg/800px-Boston_Symphony_Hall_from_the_south.jpg')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
 
 -- Venue 1
 insert into Venue ( name, city, country, street, description, mediaitem_id, capacity) values ( 'Roy Thomson Hall', 'Toronto', 'Canada', '60 Simcoe Street','Roy Thomson Hall is the home of the Toronto Symphony Orchestra and the Toronto Mendelssohn Choir.',4, 11000);

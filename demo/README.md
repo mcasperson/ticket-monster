@@ -1,3 +1,10 @@
+# Updated for Swarm
+* The `project-defaults.yml` file has been added to build the required data sources and drivers.
+* The Jackson dependencies are no longer `provided`, as this lead to the `@JsonIgnoreProperties` annotation being ignored.
+* The `import.sql` file has had the id fields for referenced rows defined to account for databases without an autoincrement of 1.
+* The images in `import.sql` were updated to point to placeholders.
+* `swarm.sh` is used to download and build a swarm jar file.
+
 # TicketMonster - a JBoss example
 
 TicketMonster is an online ticketing demo application that gets you started with JBoss technologies, and helps you learn and evaluate them.

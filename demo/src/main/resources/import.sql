@@ -1,51 +1,51 @@
 -- MediaItem 0
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image1')
 -- MediaItem 1
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image2')
 -- MediaItem 2
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image3')
 -- MediaItem 3
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image4')
 -- MediaItem 4
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image5')
 -- MediaItem 5
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image6')
 -- MediaItem 6
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image7')
 -- MediaItem 7
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image8')
 -- MediaItem 8
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image9')
 -- MediaItem 9
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image10')
 -- MediaItem 10
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image11')
 -- MediaItem 11
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image12')
 -- MediaItem 12
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image13')
 -- MediaItem 13
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image14')
 -- MediaItem 14
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image15')
 -- MediaItem 15
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image16')
 -- MediaItem 16
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image17')
 -- MediaItem 17
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image18')
 -- MediaItem 18
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image19')
 -- MediaItem 19
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image20')
 -- MediaItem 20
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image21')
 -- MediaItem 21
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image22')
 -- MediaItem 22
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image23')
 -- MediaItem 23
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://via.placeholder.com/150x150?text=Image24')
 
 -- Venue 1
 insert into Venue ( name, city, country, street, description, mediaitem_id, capacity) values ( 'Roy Thomson Hall', 'Toronto', 'Canada', '60 Simcoe Street','Roy Thomson Hall is the home of the Toronto Symphony Orchestra and the Toronto Mendelssohn Choir.',4, 11000);

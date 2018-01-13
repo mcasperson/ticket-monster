@@ -3,17 +3,21 @@ swarm:
     data-sources:
       TicketMonsterMySQLDS:
         driver-name: com.mysql
-        connection-url: jdbc:mysql://us-cdbr-iron-east-05.cleardb.net/heroku_6787f1dcb6f1f2a?reconnect=true
+        connection-url: jdbc:mysql://us-cdbr-iron-east-05.cleardb.net/heroku_6787f1dcb6f1f2a?autoReconnect=true
         user-name: user # Use the correct auth details
         password: pass # Use the correct auth details
-        min-pool-size : 5
+        min-pool-size : 1
         max-pool-size : 10
-        pool-prefill  : true
-        connection-checker-class-name : org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLValidConnectionChecker
+        pool-prefill  : false
+        connection-checker-class-name: org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLValidConnectionChecker
         stale-connection-checker: org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLStaleConnectionChecker
-        exception-sorter-class-name : org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLExceptionSorter
-        background-validation : true
-        validate-on-match: false
+        exception-sorter-class-name: org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLExceptionSorter
+        background-validation: true
+        background-validation-millis: 1000
+        check-valid-connection-sql: /* ping */ SELECT 1
+        validate-on-match: true
+        use-fast-fail: true
+        idle-timeout-minutes: 1
     jdbc-drivers:
       myh2:
         driver-class-name: org.h2.Driver

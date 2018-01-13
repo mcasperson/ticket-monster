@@ -1,51 +1,53 @@
+SET FOREIGN_KEY_CHECKS=0
+
 -- MediaItem 0
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image1')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image1');
 -- MediaItem 1
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image2')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image2');
 -- MediaItem 2
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image3')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image3');
 -- MediaItem 3
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image4')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image4');
 -- MediaItem 4
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image5')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image5');
 -- MediaItem 5
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image6')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image6');
 -- MediaItem 6
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image7')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image7');
 -- MediaItem 7
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image8')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image8');
 -- MediaItem 8
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image9')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image9');
 -- MediaItem 9
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image10')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image10');
 -- MediaItem 10
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image11')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image11');
 -- MediaItem 11
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image12')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image12');
 -- MediaItem 12
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image13')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image13');
 -- MediaItem 13
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image14')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image14');
 -- MediaItem 14
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image15')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image15');
 -- MediaItem 15
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image16')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image16');
 -- MediaItem 16
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image17')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image17');
 -- MediaItem 17
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image18')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image18');
 -- MediaItem 18
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image19')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image19');
 -- MediaItem 19
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image20')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image20');
 -- MediaItem 20
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image21')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image21');
 -- MediaItem 21
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image22')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image22');
 -- MediaItem 22
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image23')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image23');
 -- MediaItem 23
-insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image24')
+insert into MediaItem ( mediaType, url) values ( 'IMAGE', 'http://lorempixel.com/128/128/city/Image24');
 
 -- Venue 1
 insert into Venue ( name, city, country, street, description, mediaitem_id, capacity) values ( 'Roy Thomson Hall', 'Toronto', 'Canada', '60 Simcoe Street','Roy Thomson Hall is the home of the Toronto Symphony Orchestra and the Toronto Mendelssohn Choir.',4, 11000);
@@ -252,7 +254,7 @@ insert into SectionAllocation(performance_id, section_id, allocated, occupiedcou
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (8, 10, null, 0, 1);
 insert into SectionAllocation(performance_id, section_id, allocated, occupiedcount, version) values (8, 11, null, 0, 1);
 
---show 5
+-- show 5
 insert into Appearance ( event_id, venue_id) values ( 3, 3);
 
 -- Performance 9
@@ -325,3 +327,5 @@ insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values 
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (6, 21, 1, 199.50);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (6, 22, 1, 110);
 insert into TicketPrice ( show_id, section_id, ticketcategory_id, price) values (6, 23, 1, 55);
+
+SET FOREIGN_KEY_CHECKS=1

@@ -2,24 +2,24 @@ swarm:
   http:
     port: ${env.PORT:5000}
   datasources:
-    #data-sources:
-      #TicketMonsterMySQLDS:
-      #  driver-name: com.mysql
-      #  connection-url: ${env.CONNECTION_URL}
-      #  user-name: ${env.CONNECTION_USERNAME}
-      #  password: ${env.CONNECTION_PASSWORD}
-      #  min-pool-size : 1
-      #  max-pool-size : 10
-      #  pool-prefill  : false
-      #  connection-checker-class-name: org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLValidConnectionChecker
-      #  stale-connection-checker: org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLStaleConnectionChecker
-      #  exception-sorter-class-name: org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLExceptionSorter
-      #  background-validation: true
-      #  background-validation-millis: 1000
-      #  check-valid-connection-sql: /* ping */ SELECT 1
-      #  validate-on-match: true
-      #  use-fast-fail: true
-      #  idle-timeout-minutes: 1
+    data-sources:
+      TicketMonsterMySQLDS:
+        driver-name: com.mysql
+        connection-url: ${env.CONNECTION_URL:jdbc:mysql://localhost/ticketmonster?autoReconnect=true}
+        user-name: ${env.CONNECTION_USERNAME:admin}
+        password: ${env.CONNECTION_PASSWORD:password}
+        min-pool-size : 1
+        max-pool-size : 10
+        pool-prefill  : false
+        connection-checker-class-name: org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLValidConnectionChecker
+        stale-connection-checker: org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLStaleConnectionChecker
+        exception-sorter-class-name: org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLExceptionSorter
+        background-validation: true
+        background-validation-millis: 1000
+        check-valid-connection-sql: /* ping */ SELECT 1
+        validate-on-match: true
+        use-fast-fail: true
+        idle-timeout-minutes: 1
     jdbc-drivers:
       myh2:
         driver-class-name: org.h2.Driver

@@ -1,51 +1,51 @@
 -- MediaItem 0
-insert into MediaItem ( id, mediaType, url) values ( 1, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 1, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image1.jpg');
 -- MediaItem 1
-insert into MediaItem ( id, mediaType, url) values ( 2, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 2, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image2.jpg');
 -- MediaItem 2
-insert into MediaItem ( id, mediaType, url) values ( 3, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 3, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image3.jpg');
 -- MediaItem 3
-insert into MediaItem ( id, mediaType, url) values ( 4, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 4, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image4.jpg');
 -- MediaItem 4
-insert into MediaItem ( id, mediaType, url) values ( 5, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 5, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image5.jpg');
 -- MediaItem 5
-insert into MediaItem ( id, mediaType, url) values ( 6, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 6, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image6.jpg');
 -- MediaItem 6
-insert into MediaItem ( id, mediaType, url) values ( 7, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 7, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image7.jpg');
 -- MediaItem 7
-insert into MediaItem ( id, mediaType, url) values ( 8, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 8, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image8.jpg');
 -- MediaItem 8
-insert into MediaItem ( id, mediaType, url) values ( 9, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 9, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image9.jpg');
 -- MediaItem 9
-insert into MediaItem ( id, mediaType, url) values ( 10, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 10, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image10.jpg');
 -- MediaItem 10
-insert into MediaItem ( id, mediaType, url) values ( 11, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 11, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image11.jpg');
 -- MediaItem 11
-insert into MediaItem ( id, mediaType, url) values ( 12, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 12, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image12.jpg');
 -- MediaItem 12
-insert into MediaItem ( id, mediaType, url) values ( 13, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 13, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image13.jpg');
 -- MediaItem 13
-insert into MediaItem ( id, mediaType, url) values ( 14, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 14, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image14.jpg');
 -- MediaItem 14
-insert into MediaItem ( id, mediaType, url) values ( 15, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 15, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image15.jpg');
 -- MediaItem 15
-insert into MediaItem ( id, mediaType, url) values ( 16, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 16, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image16.jpg');
 -- MediaItem 16
-insert into MediaItem ( id, mediaType, url) values ( 17, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 17, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image17.jpg');
 -- MediaItem 17
-insert into MediaItem ( id, mediaType, url) values ( 18, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 18, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image18.jpg');
 -- MediaItem 18
-insert into MediaItem ( id, mediaType, url) values ( 19, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 19, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image19.jpg');
 -- MediaItem 19
-insert into MediaItem ( id, mediaType, url) values ( 20, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 20, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image20.jpg');
 -- MediaItem 20
-insert into MediaItem ( id, mediaType, url) values ( 21, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 21, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image21.jpg');
 -- MediaItem 21
-insert into MediaItem ( id, mediaType, url) values ( 22, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 22, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image22.jpg');
 -- MediaItem 22
-insert into MediaItem ( id, mediaType, url) values ( 23, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 23, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image23.jpg');
 -- MediaItem 23
-insert into MediaItem ( id, mediaType, url) values ( 24, 'IMAGE', 'http://placeimg.com/640/460/arch');
+insert into MediaItem ( id, mediaType, url) values ( 24, 'IMAGE', 'https://s3.amazonaws.com/ticketmonster-sample-images/image24.jpg');
 
 -- Venue 1
 insert into Venue ( id, name, city, country, street, description, mediaitem_id, capacity) values ( 1, 'Roy Thomson Hall', 'Toronto', 'Canada', '60 Simcoe Street','Roy Thomson Hall is the home of the Toronto Symphony Orchestra and the Toronto Mendelssohn Choir.',4, 11000);

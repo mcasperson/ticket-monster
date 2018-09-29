@@ -1,51 +1,51 @@
 -- MediaItem 0
-insert into MediaItem ( id, mediaType, url) values ( 1, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 1, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 1
-insert into MediaItem ( id, mediaType, url) values ( 2, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 2, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 2
-insert into MediaItem ( id, mediaType, url) values ( 3, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 3, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 3
-insert into MediaItem ( id, mediaType, url) values ( 4, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 4, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 4
-insert into MediaItem ( id, mediaType, url) values ( 5, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 5, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 5
-insert into MediaItem ( id, mediaType, url) values ( 6, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 6, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 6
-insert into MediaItem ( id, mediaType, url) values ( 7, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 7, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 7
-insert into MediaItem ( id, mediaType, url) values ( 8, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 8, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 8
-insert into MediaItem ( id, mediaType, url) values ( 9, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 9, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 9
-insert into MediaItem ( id, mediaType, url) values ( 10, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 10, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 10
-insert into MediaItem ( id, mediaType, url) values ( 11, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 11, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 11
-insert into MediaItem ( id, mediaType, url) values ( 12, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 12, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 12
-insert into MediaItem ( id, mediaType, url) values ( 13, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 13, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 13
-insert into MediaItem ( id, mediaType, url) values ( 14, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 14, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 14
-insert into MediaItem ( id, mediaType, url) values ( 15, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 15, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 15
-insert into MediaItem ( id, mediaType, url) values ( 16, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 16, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 16
-insert into MediaItem ( id, mediaType, url) values ( 17, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 17, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 17
-insert into MediaItem ( id, mediaType, url) values ( 18, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 18, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 18
-insert into MediaItem ( id, mediaType, url) values ( 19, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 19, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 19
-insert into MediaItem ( id, mediaType, url) values ( 20, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 20, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 20
-insert into MediaItem ( id, mediaType, url) values ( 21, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 21, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 21
-insert into MediaItem ( id, mediaType, url) values ( 22, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 22, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 22
-insert into MediaItem ( id, mediaType, url) values ( 23, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 23, 'IMAGE', 'http://placeimg.com/640/460/arch');
 -- MediaItem 23
-insert into MediaItem ( id, mediaType, url) values ( 24, 'IMAGE', 'http://placeimg.com/640/128/arch');
+insert into MediaItem ( id, mediaType, url) values ( 24, 'IMAGE', 'http://placeimg.com/640/460/arch');
 
 -- Venue 1
 insert into Venue ( id, name, city, country, street, description, mediaitem_id, capacity) values ( 1, 'Roy Thomson Hall', 'Toronto', 'Canada', '60 Simcoe Street','Roy Thomson Hall is the home of the Toronto Symphony Orchestra and the Toronto Mendelssohn Choir.',4, 11000);

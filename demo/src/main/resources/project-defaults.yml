@@ -1,11 +1,13 @@
 swarm:
+  http:
+    port: 80
   datasources:
     data-sources:
       TicketMonsterMySQLDS:
         driver-name: com.mysql
-        connection-url: ${env.CONNECTION_URL}
-        user-name: ${env.CONNECTION_USERNAME}
-        password: ${env.CONNECTION_PASSWORD}
+        connection-url: env.CONNECTION_URL
+        user-name: env.CONNECTION_USERNAME
+        password: env.CONNECTION_PASSWORD
         min-pool-size : 1
         max-pool-size : 10
         pool-prefill  : false

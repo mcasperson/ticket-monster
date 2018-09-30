@@ -27,27 +27,27 @@ pipeline {
                   string(credentialsId: 'OctopusAPIKey', variable: 'APIKey'),
                   string(credentialsId: 'OctopusServer', variable: 'OctopusServer')
                 ]) {
-                    sh '''
+                    sh """
                         cd demo
                         ${tool('Octo CLI')}/Octo create-channel \
                             --server ${OctopusServer} \
                             --apiKey ${APIKey} \
                             --update-existing \
                             --channel ${env.BRANCH_NAME} \
-                            --project "UI Testing"
+                            --project 'UI Testing'
                         ${tool('Octo CLI')}/Octo push \
                             --package ticket-monster.2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME}.jar \
                             --replace-existing \
                             --server ${OctopusServer} \
                             --apiKey ${APIKey}
                         ${tool('Octo CLI')}/Octo create-release \
-                            --project "UI Testing" \
+                            --project 'UI Testing' \
                             --channel ${env.BRANCH_NAME} \
                             --ignoreexisting \
                             --server ${OctopusServer} \
                             --apiKey ${APIKey}
                         ${tool('Octo CLI')}/Octo deploy-release \
-                            --project "UI Testing" \
+                            --project 'UI Testing' \
                             --channel ${env.BRANCH_NAME} \
                             --version 2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME} \
                             --deployto Testing \

@@ -52,6 +52,7 @@ pipeline {
                             --project UITesting \
                             --channel ${env.BRANCH_NAME} \
                             --version 1.0.${env.BUILD_NUMBER} \
+                            --deploymenttimeout 01:00:00 \
                             --deployto Testing \
                             --waitfordeployment \
                             --server ${OctopusServer} \

@@ -1,0 +1,46 @@
+pipeline {
+    tools {
+        maven 'Maven 3.3.9'
+        jdk 'jdk8'
+    }
+    stages {
+        stage ('Package') {
+            steps {
+                sh """
+                    mvn -Dmaven.test.skip=true package
+                    if [ ! -f swarmtool-2.2.0.Final-standalone.jar ]; then
+                       wget https://repo1.maven.org/maven2/io/thorntail/swarmtool/2.2.0.Final/swarmtool-2.2.0.Final-standalone.jar
+                    fi
+                    java -jar swarmtool-2.2.0.Final-standalone.jar \
+                        -d com.h2database:h2:1.4.196 \
+                        -d mysql:mysql-connector-java:5.1.45 \
+                        target/ticket-monster.war
+                    mv ticket-monster ticket-monster.2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME}.jar
+                """
+            }
+        }
+        stage ('Deploy to Octopus') {
+            steps {
+                withCredentials([string(credentialsId: 'OctopusAPIKey', variable: 'APIKey')]) {
+                    sh """
+                        ${tool('Octo CLI')}/Octo push /
+                            --package ticket-monster.2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME}.jar /
+                            --replace-existing /
+                            --server  ${OctopusServer} /
+                            --apiKey ${APIKey}
+                        ${tool('Octo CLI')}/Octo create-release /
+                            --project "UI Testing" /
+                            --server ${OctopusServer} /
+                            --apiKey ${APIKey}
+                        ${tool('Octo CLI')}/Octo deploy-release /
+                            --project "Thymeleaf Demo" /
+                            --version 2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME} /
+                            --deployto Testing /
+                            --server ${OctopusServer} /
+                            --apiKey ${APIKey}
+                    """
+                }
+            }
+        }
+    }
+}

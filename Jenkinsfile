@@ -44,12 +44,14 @@ pipeline {
                             --project UITesting \
                             --channel ${env.BRANCH_NAME} \
                             --ignoreexisting \
+                            --package ticket-monster:2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME} \
+                            --version 0.0.${env.BUILD_NUMBER} \
                             --server ${OctopusServer} \
                             --apiKey ${APIKey}
                         ${tool('Octo CLI')}/Octo deploy-release \
                             --project UITesting \
                             --channel ${env.BRANCH_NAME} \
-                            --version 2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME} \
+                            --version 0.0.${env.BUILD_NUMBER} \
                             --deployto Testing \
                             --waitfordeployment \
                             --server ${OctopusServer} \

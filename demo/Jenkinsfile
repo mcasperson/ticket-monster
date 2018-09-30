@@ -1,6 +1,6 @@
 pipeline {
     tools {
-        maven 'Maven 3.3.9'
+        maven 'Maven 3.5.4'
         jdk 'jdk8'
     }
     stages {
@@ -21,7 +21,9 @@ pipeline {
         }
         stage ('Deploy to Octopus') {
             steps {
-                withCredentials([string(credentialsId: 'OctopusAPIKey', variable: 'APIKey')]) {
+                withCredentials([string(credentialsId: 'OctopusAPIKey', variable: 'APIKey'),
+                    string(credentialsId: 'OctopusServer', variable: 'OctopusServer')]) {
+
                     sh """
                         ${tool('Octo CLI')}/Octo push /
                             --package ticket-monster.2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME}.jar /

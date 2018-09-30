@@ -28,7 +28,6 @@ pipeline {
                   string(credentialsId: 'OctopusServer', variable: 'OctopusServer')
                 ]) {
                     sh """
-                        cd demo
                         ${tool('Octo CLI')}/Octo create-channel \
                             --server ${OctopusServer} \
                             --apiKey ${APIKey} \

@@ -23,9 +23,10 @@ pipeline {
         }
         stage ('Deploy to Octopus') {
             steps {
-                withCredentials([string(credentialsId: 'OctopusAPIKey', variable: 'APIKey'),
-                    string(credentialsId: 'OctopusServer', variable: 'OctopusServer')]) {
-
+                withCredentials([
+                  string(credentialsId: 'OctopusAPIKey', variable: 'APIKey'),
+                  string(credentialsId: 'OctopusServer', variable: 'OctopusServer')
+                ]) {
                     sh """
                         cd demo
                         ${tool('Octo CLI')}/Octo push /

@@ -7,6 +7,7 @@ pipeline {
         stage ('Package') {
             steps {
                 sh """
+                    cd demo
                     mvn -Dmaven.test.skip=true package
                     if [ ! -f swarmtool-2.2.0.Final-standalone.jar ]; then
                        wget https://repo1.maven.org/maven2/io/thorntail/swarmtool/2.2.0.Final/swarmtool-2.2.0.Final-standalone.jar
@@ -25,6 +26,7 @@ pipeline {
                     string(credentialsId: 'OctopusServer', variable: 'OctopusServer')]) {
 
                     sh """
+                        cd demo
                         ${tool('Octo CLI')}/Octo push /
                             --package ticket-monster.2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME}.jar /
                             --replace-existing /

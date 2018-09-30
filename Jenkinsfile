@@ -29,20 +29,28 @@ pipeline {
                 ]) {
                     sh """
                         cd demo
-                        ${tool('Octo CLI')}/Octo push /
-                            --package ticket-monster.2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME}.jar /
-                            --replace-existing /
-                            --server  ${OctopusServer} /
+                        ${tool('Octo CLI')}/Octo create-channel \
+                            --server  ${OctopusServer} \
+                            --apiKey ${APIKey} \
+                            --update-existing \
+                            --channel ${env.BRANCH_NAME} \
+                            --project "UI Testing"
+                        ${tool('Octo CLI')}/Octo push \
+                            --package ticket-monster.2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME}.jar \
+                            --replace-existing \
+                            --server ${OctopusServer} \
                             --apiKey ${APIKey}
-                        ${tool('Octo CLI')}/Octo create-release /
-                            --project "UI Testing" /
-                            --server ${OctopusServer} /
+                        ${tool('Octo CLI')}/Octo create-release \
+                            --project "UI Testing" \
+                            --channel ${env.BRANCH_NAME} \
+                            --server ${OctopusServer} \
                             --apiKey ${APIKey}
-                        ${tool('Octo CLI')}/Octo deploy-release /
-                            --project "Thymeleaf Demo" /
-                            --version 2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME} /
-                            --deployto Testing /
-                            --server ${OctopusServer} /
+                        ${tool('Octo CLI')}/Octo deploy-release \
+                            --project "UI Testing" \
+                            --channel ${env.BRANCH_NAME} \
+                            --version 2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME} \
+                            --deployto Testing \
+                            --server ${OctopusServer} \
                             --apiKey ${APIKey}
                     """
                 }

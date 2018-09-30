@@ -21,7 +21,7 @@ pipeline {
                 """
             }
         }
-        stage ('Deploy to Octopus') {
+        stage ('UI Testing') {
             steps {
                 withCredentials([
                   string(credentialsId: 'OctopusAPIKey', variable: 'APIKey'),

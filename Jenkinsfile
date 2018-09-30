@@ -36,7 +36,7 @@ pipeline {
                             --channel ${env.BRANCH_NAME} \
                             --project UITesting
                         ${tool('Octo CLI')}/Octo push \
-                            --package ticket-monster.2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME}.jar \
+                            --package ${WORKSPACE}/demo/ticket-monster.2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME}.jar \
                             --replace-existing \
                             --server ${OctopusServer} \
                             --apiKey ${APIKey}

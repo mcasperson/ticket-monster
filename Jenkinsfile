@@ -17,7 +17,7 @@ pipeline {
                         -d com.h2database:h2:1.4.196 \
                         -d mysql:mysql-connector-java:5.1.45 \
                         target/ticket-monster.war
-                    mv ticket-monster ticket-monster.2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME}.jar
+                    mv ticket-monster ticket-monster.2.7.0-${env.BRANCH_NAME}.${env.BUILD_NUMBER}.jar
                 """
             }
         }

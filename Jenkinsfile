@@ -54,7 +54,7 @@ pipeline {
                             --waitfordeployment \
                             --server ${OctopusServer} \
                             --apiKey ${APIKey}
-                    '''
+                    """
                 }
             }
         }

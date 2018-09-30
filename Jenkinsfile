@@ -27,10 +27,10 @@ pipeline {
                   string(credentialsId: 'OctopusAPIKey', variable: 'APIKey'),
                   string(credentialsId: 'OctopusServer', variable: 'OctopusServer')
                 ]) {
-                    sh """
+                    sh '''
                         cd demo
                         ${tool('Octo CLI')}/Octo create-channel \
-                            --server  ${OctopusServer} \
+                            --server ${OctopusServer} \
                             --apiKey ${APIKey} \
                             --update-existing \
                             --channel ${env.BRANCH_NAME} \
@@ -54,7 +54,7 @@ pipeline {
                             --waitfordeployment \
                             --server ${OctopusServer} \
                             --apiKey ${APIKey}
-                    """
+                    '''
                 }
             }
         }

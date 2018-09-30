@@ -36,7 +36,7 @@ pipeline {
                             --channel ${env.BRANCH_NAME} \
                             --project UITesting
                         ${tool('Octo CLI')}/Octo push \
-                            --package ${WORKSPACE}/demo/ticket-monster.2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME}.jar \
+                            --package ${WORKSPACE}/demo/ticket-monster.2.7.0-${env.BRANCH_NAME}.${env.BUILD_NUMBER}.jar \
                             --replace-existing \
                             --server ${OctopusServer} \
                             --apiKey ${APIKey}
@@ -44,7 +44,7 @@ pipeline {
                             --project UITesting \
                             --channel ${env.BRANCH_NAME} \
                             --ignoreexisting \
-                            --package ticket-monster:2.7.0.${env.BUILD_NUMBER}-${env.BRANCH_NAME} \
+                            --package ticket-monster:2.7.0-${env.BRANCH_NAME}.${env.BUILD_NUMBER} \
                             --version 1.0.${env.BUILD_NUMBER} \
                             --server ${OctopusServer} \
                             --apiKey ${APIKey}

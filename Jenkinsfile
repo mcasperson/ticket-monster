@@ -23,10 +23,15 @@ pipeline {
         }
         stage ('Build Docker Image') {
         	steps {	
-        		sh """
-        			whoami
-        			docker build --build-arg jar_file=demo/ticket-monster.2.7.0-${env.BRANCH_NAME}.${env.BUILD_NUMBER}.jar .
-        		"""
+        		withCredentials([
+        			usernamePassword(credentialsId: 'DockerHub', usernameVariable: 'DockerHubUser', passwordVariable: 'DockerHubPass')
+				 ]) {
+					sh """
+						docker login -u ${DockerHubUser} -p ${DockerHubPass}
+						docker build --build-arg jar_file=demo/ticket-monster.2.7.0-${env.BRANCH_NAME}.${env.BUILD_NUMBER}.jar -t mcasperson/ticket-monster:2.7.0-${env.BRANCH_NAME}.${env.BUILD_NUMBER} .
+						docker push mcasperson/ticket-monster:2.7.0-${env.BRANCH_NAME}.${env.BUILD_NUMBER}
+					"""
+				}
 			}
         }
         stage ('UI Testing') {

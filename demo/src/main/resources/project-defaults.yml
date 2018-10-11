@@ -1,4 +1,6 @@
 swarm:
+  context:
+    path: ${env.CONTEXT_PATH:/}
   http:
     port: ${env.PORT:5000}
   datasources:

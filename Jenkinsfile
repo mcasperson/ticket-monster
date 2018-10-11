@@ -24,7 +24,7 @@ pipeline {
         stage ('Build Docker Image') {
         	steps {	
         		sh """
-        			docker build --build-arg jar_file=${WORKSPACE}/demo/ticket-monster.2.7.0-${env.BRANCH_NAME}.${env.BUILD_NUMBER}.jar
+        			docker build --build-arg jar_file=${WORKSPACE}/demo/ticket-monster.2.7.0-${env.BRANCH_NAME}.${env.BUILD_NUMBER}.jar .
         		"""
 			}
         }

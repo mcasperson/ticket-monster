@@ -3,6 +3,7 @@ pipeline {
     tools {
         maven 'Maven 3.5.4'
         jdk 'jdk8'
+        docker 'docker'
     }
     stages {
         stage ('Package') {
@@ -20,6 +21,13 @@ pipeline {
                     mv ticket-monster ticket-monster.2.7.0-${env.BRANCH_NAME}.${env.BUILD_NUMBER}.jar
                 """
             }
+        }
+        stage ('Build Docker Image') {
+        	steps {	
+        		sh """
+        			docker build --build-arg jar_file=${WORKSPACE}/demo/ticket-monster.2.7.0-${env.BRANCH_NAME}.${env.BUILD_NUMBER}.jar
+        		"""
+			}
         }
         stage ('UI Testing') {
             steps {

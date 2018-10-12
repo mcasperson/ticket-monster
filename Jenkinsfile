@@ -9,7 +9,7 @@ pipeline {
             steps {
                 sh """
                     cd demo
-                    mvn -Dmaven.test.skip=true package
+                    mvn -Dmaven.test.skip=true -Pmysql package
                     if [ ! -f swarmtool-2.2.0.Final-standalone.jar ]; then
                        wget https://repo1.maven.org/maven2/io/thorntail/swarmtool/2.2.0.Final/swarmtool-2.2.0.Final-standalone.jar
                     fi

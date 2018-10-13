@@ -59,7 +59,8 @@ pipeline {
                             --package ticket-monster:2.7.0-${env.BRANCH_NAME}.${env.BUILD_NUMBER} \
                             --version 1.0.${env.BUILD_NUMBER} \
                             --server ${OctopusServer} \
-                            --apiKey ${APIKey}
+                            --apiKey ${APIKey} \
+                            --tenant=*
                         ${tool('Octo CLI')}/Octo deploy-release \
                             --project UITesting \
                             --channel ${env.BRANCH_NAME} \
@@ -68,7 +69,8 @@ pipeline {
                             --deployto Testing \
                             --waitfordeployment \
                             --server ${OctopusServer} \
-                            --apiKey ${APIKey}
+                            --apiKey ${APIKey} \
+                            --tenant=*
                     """
                 }
             }

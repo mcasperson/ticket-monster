@@ -9,7 +9,7 @@ pipeline {
             steps {
                 sh """
                     cd demo
-                    mvn -Dmaven.test.skip=true package
+                    mvn -Dmaven.test.skip=true -Pmysql package
                     if [ ! -f swarmtool-2.2.0.Final-standalone.jar ]; then
                        wget https://repo1.maven.org/maven2/io/thorntail/swarmtool/2.2.0.Final/swarmtool-2.2.0.Final-standalone.jar
                     fi
@@ -54,7 +54,8 @@ pipeline {
                             --package ticket-monster:2.7.0-${env.BRANCH_NAME}.${env.BUILD_NUMBER} \
                             --version 1.0.${env.BUILD_NUMBER} \
                             --server ${OctopusServer} \
-                            --apiKey ${APIKey}
+                            --apiKey ${APIKey} \
+                            --tenant=*
                         ${tool('Octo CLI')}/Octo deploy-release \
                             --project UITesting \
                             --channel ${env.BRANCH_NAME} \
@@ -63,7 +64,8 @@ pipeline {
                             --deployto Testing \
                             --waitfordeployment \
                             --server ${OctopusServer} \
-                            --apiKey ${APIKey}
+                            --apiKey ${APIKey} \
+                            --tenant=*
                     """
                 }
             }

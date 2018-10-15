@@ -41,15 +41,13 @@ pipeline {
                   string(credentialsId: 'OctopusServer', variable: 'OctopusServer')
                 ]) {
                     sh """
-                        ${tool('Octo CLI')}/Octo create-channel \
+                        ${tool('Octo CLI')}/Octo create-environment \
                             --server ${OctopusServer} \
                             --apiKey ${APIKey} \
-                            --update-existing \
-                            --channel ${env.BRANCH_NAME} \
-                            --project UITesting                        
+                            --ignoreIfExists \
+                            --name ${env.BRANCH_NAME}                       
                         ${tool('Octo CLI')}/Octo create-release \
                             --project UITesting \
-                            --channel ${env.BRANCH_NAME} \
                             --ignoreexisting \
                             --package ticket-monster:2.7.0-${env.BRANCH_NAME}.${env.BUILD_NUMBER} \
                             --version 1.0.${env.BUILD_NUMBER} \
@@ -58,14 +56,14 @@ pipeline {
                             --tenant=*
                         ${tool('Octo CLI')}/Octo deploy-release \
                             --project UITesting \
-                            --channel ${env.BRANCH_NAME} \
                             --version 1.0.${env.BUILD_NUMBER} \
                             --deploymenttimeout 01:00:00 \
                             --deployto Testing \
                             --waitfordeployment \
                             --server ${OctopusServer} \
                             --apiKey ${APIKey} \
-                            --tenant=*
+                            --tenant=* \
+							--deployto ${env.BRANCH_NAME}
                     """
                 }
             }

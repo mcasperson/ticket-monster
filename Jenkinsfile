@@ -65,7 +65,8 @@ pipeline {
                             --version 1.0.${env.BUILD_NUMBER} \
                             --server ${OctopusServer} \
                             --apiKey ${APIKey} \
-                            --tenants=*
+                            --tenant Hosted1 \
+							--tenant Hosted2
                         ${tool('Octo CLI')}/Octo deploy-release \
                             --project UITesting \
                             --version 1.0.${env.BUILD_NUMBER} \
@@ -73,7 +74,8 @@ pipeline {
                             --waitfordeployment \
                             --server ${OctopusServer} \
                             --apiKey ${APIKey} \
-                            --tenants=* \
+                            --tenant Hosted1 \
+							--tenant Hosted2 \
 							--deployto ${env.BRANCH_NAME}
                     """
                 }

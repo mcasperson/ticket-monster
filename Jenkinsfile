@@ -51,7 +51,22 @@ pipeline {
 							--server ${OctopusServer} \
                             --apiKey ${APIKey} \
 							--machine=GoogleK8SAdmin \
-							--environment=${env.BRANCH_NAME}						
+							--environment=${env.BRANCH_NAME}
+						${tool('Octo CLI')}/Octo associate-machine \
+							--server ${OctopusServer} \
+                            --apiKey ${APIKey} \
+							--machine=AWS us-east-1 \
+							--environment=${env.BRANCH_NAME}								
+						${tool('Octo CLI')}/Octo associate-machine \
+							--server ${OctopusServer} \
+                            --apiKey ${APIKey} \
+							--machine=AWS us-west-1 \
+							--environment=${env.BRANCH_NAME}		
+						${tool('Octo CLI')}/Octo associate-machine \
+							--server ${OctopusServer} \
+                            --apiKey ${APIKey} \
+							--machine=AWS us-east-2 \
+							--environment=${env.BRANCH_NAME}	
 						${tool('Octo CLI')}/Octo associate-tenant \
 							--server ${OctopusServer} \
                             --apiKey ${APIKey} \

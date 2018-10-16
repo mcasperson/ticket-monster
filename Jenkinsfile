@@ -43,8 +43,8 @@ pipeline {
                     powershell """
 					Add-Type -AssemblyName System.IO.Compression.FileSystem					
 					curl https://www.nuget.org/api/v2/package/Octopus.Client/4.41.5 -o Octopus.Client.nupkg
-					[System.IO.Compression.ZipFile]::ExtractToDirectory("$pwd\Octopus.Client.nupkg", "$pwd\octopus")
-					[Reflection.Assembly]::LoadFrom("$pwd\octopus\lib\netstandard1.6\Octopus.Client.dll")
+					[System.IO.Compression.ZipFile]::ExtractToDirectory("$pwd/Octopus.Client.nupkg", "$pwd/octopus")
+					[Reflection.Assembly]::LoadFrom("$pwd/octopus/lib/netstandard1.6/Octopus.Client.dll")
 					
 					@( "Hosted1", "Hosted2" ) | % {					  
 					  $endpoint = new-object Octopus.Client.OctopusServerEndpoint($OctopusServer, $APIKey)

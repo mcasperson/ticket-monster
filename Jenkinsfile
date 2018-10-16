@@ -47,10 +47,14 @@ pipeline {
                             --ignoreIfExists \
                             --name ${env.BRANCH_NAME}   
 						${tool('Octo CLI')}/Octo associate-tenant \
+							--server ${OctopusServer} \
+                            --apiKey ${APIKey} \
 							--project=UITesting \
 							--environment=${env.BRANCH_NAME} \
 							--tenant=Hosted1
 						${tool('Octo CLI')}/Octo associate-tenant \
+							--server ${OctopusServer} \
+                            --apiKey ${APIKey} \
 							--project=UITesting \
 							--environment=${env.BRANCH_NAME} \
 							--tenant=Hosted2

@@ -49,7 +49,7 @@ pipeline {
 						${tool('Octo CLI')}/Octo associate-machine \
 							--server ${OctopusServer} \
                             --apiKey ${APIKey} \
-							--machine=Google K8S Admin \
+							--machine=GoogleK8SAdmin \
 							--environment=${env.BRANCH_NAME}						
 						${tool('Octo CLI')}/Octo associate-tenant \
 							--server ${OctopusServer} \

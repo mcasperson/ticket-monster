@@ -40,33 +40,47 @@ pipeline {
                   string(credentialsId: 'OctopusAPIKey', variable: 'APIKey'),
                   string(credentialsId: 'OctopusServer', variable: 'OctopusServer')
                 ]) {
-                    sh """
-                        ${tool('Octo CLI')}/Octo create-channel \
+                    powershell """
+						Add-Type -AssemblyName System.IO.Compression.FileSystem					
+						curl https://www.nuget.org/api/v2/package/Octopus.Client/4.41.5 -o Octopus.Client.nupkg
+						[System.IO.Compression.ZipFile]::ExtractToDirectory("$pwd/Octopus.Client.nupkg", "$pwd/octopus")
+						[Reflection.Assembly]::LoadFrom("$pwd/octopus/lib/netstandard1.6/Octopus.Client.dll")
+						
+						@( "Hosted1", "Hosted2" ) | % {					  
+						  $endpoint = new-object Octopus.Client.OctopusServerEndpoint($OctopusServer, $APIKey)
+						  $repository = new-object Octopus.Client.OctopusRepository($endpoint)
+
+						  $project = $repository.Projects.FindByName("UITesting")
+						  $environment = $repository.Environments.FindByName($env:BRANCH_NAME)
+
+						  $tenantEditor = $repository.Tenants.CreateOrModify($_)
+						  $tenantEditor.ConnectToProjectAndEnvironments($project, $environment)
+						  $tenantEditor.Save()
+						}
+					"""
+					sh """
+                        ${tool('Octo CLI')}/Octo create-environment \
                             --server ${OctopusServer} \
                             --apiKey ${APIKey} \
-                            --update-existing \
-                            --channel ${env.BRANCH_NAME} \
-                            --project UITesting                        
+                            --ignoreIfExists \
+                            --name ${env.BRANCH_NAME}                       
                         ${tool('Octo CLI')}/Octo create-release \
                             --project UITesting \
-                            --channel ${env.BRANCH_NAME} \
                             --ignoreexisting \
                             --package ticket-monster:2.7.0-${env.BRANCH_NAME}.${env.BUILD_NUMBER} \
                             --version 1.0.${env.BUILD_NUMBER} \
                             --server ${OctopusServer} \
                             --apiKey ${APIKey} \
-                            --tenant=*
+                            --tenanttag Feature
                         ${tool('Octo CLI')}/Octo deploy-release \
                             --project UITesting \
-                            --channel ${env.BRANCH_NAME} \
                             --version 1.0.${env.BUILD_NUMBER} \
                             --deploymenttimeout 01:00:00 \
-                            --deployto Testing \
                             --waitfordeployment \
                             --server ${OctopusServer} \
                             --apiKey ${APIKey} \
-                            --tenant=* \
-							--specificmachines TicketMonster-Testing-Hosted1-${env.BRANCH_NAME},TicketMonster-Testing-Hosted2-${env.BRANCH_NAME}
+                            --tenanttag Feature \
+							--deployto ${env.BRANCH_NAME}
                     """
                 }
             }

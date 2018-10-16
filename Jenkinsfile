@@ -45,6 +45,7 @@ pipeline {
                             --server ${OctopusServer} \
                             --apiKey ${APIKey} \
                             --ignoreIfExists \
+							--allowDynamicInfrastructure \
                             --name ${env.BRANCH_NAME}  
 						${tool('Octo CLI')}/Octo associate-machine \
 							--server ${OctopusServer} \

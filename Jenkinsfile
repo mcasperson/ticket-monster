@@ -55,17 +55,17 @@ pipeline {
 						${tool('Octo CLI')}/Octo associate-machine \
 							--server ${OctopusServer} \
                             --apiKey ${APIKey} \
-							--machine=AWS us-east-1 \
+							--machine=AWS-us-east-1 \
 							--environment=${env.BRANCH_NAME}								
 						${tool('Octo CLI')}/Octo associate-machine \
 							--server ${OctopusServer} \
                             --apiKey ${APIKey} \
-							--machine=AWS us-west-1 \
+							--machine=AWS-us-west-1 \
 							--environment=${env.BRANCH_NAME}		
 						${tool('Octo CLI')}/Octo associate-machine \
 							--server ${OctopusServer} \
                             --apiKey ${APIKey} \
-							--machine=AWS us-east-2 \
+							--machine=AWS-us-east-2 \
 							--environment=${env.BRANCH_NAME}	
 						${tool('Octo CLI')}/Octo associate-tenant \
 							--server ${OctopusServer} \
